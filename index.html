@@ -68,14 +68,58 @@
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
             margin-top: 20px;
         }
+
+        /* Highlights section */
+        .highlights {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+
+        .highlights h2 {
+            font-size: 28px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        .highlights p {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .highlights strong {
+            color: #b22222;
+        }
+
+        .highlights .green {
+            color: #228B22;
+        }
+
+        .highlights .golden {
+            color: #B8860B;
+        }
+
+        .highlights .blue {
+            color: #1E3A8A;
+        }
+
+        .highlights img {
+            width: 80%;
+            max-width: 800px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
     </style>
 </head>
 <body>
 
     <br>
     <center>
-        <h1>SemGes: Semantics-aware Co-Speech Gesture Generation using Semantic
-			Coherence and Relevance Learning</h1>
+        <h1>SemGes: Semantics-aware Co-Speech Gesture Generation using Semantic Coherence and Relevance Learning</h1>
     </center>
 
     <!-- Swiper for videos (above abstract) -->
@@ -105,13 +149,19 @@
 
     <div class="video-caption">SemGes: semantically generated gestures from our model.</div>
 
-    <div class="content">
-        <h1>Abstract</h1>
-        <p>
-            Creating a virtual avatar with semantically coherent gestures that are aligned with speech is a challenging task. Existing gesture generation research mainly focused on generating rhythmic beat gestures, neglecting the semantic context of the gestures. In this paper, we propose a novel approach for semantic grounding in co-speech gesture generation that integrates semantic information at both fine-grained and global levels. Our approach starts with learning the motion prior through a vector-quantized variational autoencoder. Built on this model, a second-stage module is applied to automatically generate gestures from speech, text-based semantics and speaker identity that ensures consistency between the semantic relevance of generated gestures and co-occurring speech semantics through semantic coherence and relevance modules. Experimental results demonstrate that our approach enhances the realism and coherence of semantic gestures. Extensive experiments and user studies show that our method outperforms state-of-the-art approaches across two benchmarks in co-speech gesture generation in both objective and subjective metrics.
-        </p>
+    <!-- Highlights Section -->
+    <div class="highlights">
+        <h2>🔥 Highlights</h2>
+        <p>We introduce a novel framework, <strong>SemGes</strong>, that first learns a robust VQ-VAE motion prior for body and hand gestures, and then generates gestures driven by fused speech audio, text-based semantics, and speaker identity in a cross-modal transformer.</p>
+        <p>Our method jointly captures <strong class="golden">discourse-level context</strong> via a semantic coherence loss and <span class="green">fine-grained representational gestures</span> (e.g., iconic, metaphoric) via a semantic relevance loss.</p>
+        <p>We propose an <strong class="blue">overlap-and-combine inference algorithm</strong> that maintains smooth continuity over extended durations.</p>
+        <p>Extensive experiments on two benchmarks, namely, the <span class="golden">BEAT</span> and <span class="golden">TED Expressive</span> datasets show that our method outperforms recent baselines in both objective metrics (e.g., Fréchet Gesture Distance (FGD), diversity, semantic alignment) and user judgment of generated gestures.</p>
     </div>
 
+    <div class="content">
+        <h1>Abstract</h1>
+        <p>Creating a virtual avatar with semantically coherent gestures that are aligned with speech is a challenging task. Existing gesture generation research mainly focused on generating rhythmic beat gestures, neglecting the semantic context of the gestures. In this paper, we propose a novel approach for semantic grounding in co-speech gesture generation that integrates semantic information at both fine-grained and global levels. Our approach starts with learning the motion prior through a vector-quantized variational autoencoder. Built on this model, a second-stage module is applied to automatically generate gestures from speech, text-based semantics and speaker identity that ensures consistency between the semantic relevance of generated gestures and co-occurring speech semantics through semantic coherence and relevance modules. Experimental results demonstrate that our approach enhances the realism and coherence of semantic gestures. Extensive experiments and user studies show that our method outperforms state-of-the-art approaches across two benchmarks in co-speech gesture generation in both objective and subjective metrics.</p>
+    </div>
 
     <!-- Swiper.js Script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
