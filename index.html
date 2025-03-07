@@ -162,7 +162,145 @@
         <h1>Abstract</h1>
         <p>Creating a virtual avatar with semantically coherent gestures that are aligned with speech is a challenging task. Existing gesture generation research mainly focused on generating rhythmic beat gestures, neglecting the semantic context of the gestures. In this paper, we propose a novel approach for semantic grounding in co-speech gesture generation that integrates semantic information at both fine-grained and global levels. Our approach starts with learning the motion prior through a vector-quantized variational autoencoder. Built on this model, a second-stage module is applied to automatically generate gestures from speech, text-based semantics and speaker identity that ensures consistency between the semantic relevance of generated gestures and co-occurring speech semantics through semantic coherence and relevance modules. Experimental results demonstrate that our approach enhances the realism and coherence of semantic gestures. Extensive experiments and user studies show that our method outperforms state-of-the-art approaches across two benchmarks in co-speech gesture generation in both objective and subjective metrics.</p>
     </div>
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>SemGes: Semantic-Aware Gesture Generation</title>
+	
+		<!-- Swiper.js CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+	
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+	
+			body {
+				font-family: 'Playfair Display', serif;
+				font-size: 18px;
+				margin-left: auto;
+				margin-right: auto;
+				width: 1100px;
+				background-color: #f9f9f9;
+			}
+	
+			h1 {
+				font-size: 36px;
+				font-weight: 700;
+				text-align: center;
+				color: #333;
+			}
+	
+			/* Swiper styles */
+			.swiper-container {
+				width: 100%;
+				max-width: 900px;
+				margin: auto;
+				padding-top: 20px;
+				padding-bottom: 40px;
+			}
+	
+			.swiper-slide {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background: #fff;
+				border-radius: 10px;
+				overflow: hidden;
+				box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+			}
+	
+			video {
+				width: 100%;
+				max-width: 600px;
+				border-radius: 12px;
+				border: 2px solid #ccc;
+			}
+	
+			.video-caption {
+				text-align: center;
+				font-size: 16px;
+				color: #555;
+				font-style: italic;
+				margin-top: 5px;
+			}
+	
+			.content {
+				background: white;
+				padding: 20px;
+				border-radius: 10px;
+				box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+				margin-top: 20px;
+			}
+	
+			/* Highlights section */
+			.highlights {
+				text-align: center;
+				background-color: #fff;
+				padding: 20px;
+				border-radius: 10px;
+				box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+				margin: 20px 0;
+			}
+	
+			.highlights h2 {
+				font-size: 28px;
+				font-weight: bold;
+				color: #444;
+			}
+	
+			.highlights p {
+				font-size: 18px;
+				color: #333;
+				margin-bottom: 10px;
+			}
+	
+			.framework {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+			}
 
+			.framework h2 {
+				font-size: 28px;
+				font-weight: bold;
+				color: #444;
+			}
+
+			.framework p {
+				font-size: 18px;
+				color: #333;
+				margin-bottom: 10px;
+			}
+
+			.framework img {
+				width: 100%;
+				max-width: 100%;
+				height: auto;
+				border-radius: 10px;
+				margin-top: 15px;
+			}
+		</style>
+	</head>
+	<body>
+
+	
+		<!-- Framework Section -->
+		<div class="framework">
+			<h2>🛠️ SemGes Framework Overview</h2>
+			<img src="resources/pipeline.png" alt="SemGes Framework">
+			<p>SemGes employs three training pathways:</p>
+			<p><strong>(1) Global semantic coherence</strong>, which minimizes latent disparities between gesture and text encoders.</p>
+			<p><strong>(2) Multimodal Quantization learning</strong>, where integrated multimodal representation codes are aligned with quantized motion to decode them into hand and body movements.</p>
+			<p><strong>(3) Semantic relevance learning</strong>, which emphasizes semantic gestures.</p>
+
+		</div>
+	</body>
+	</html>
+	
     <!-- Swiper.js Script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
